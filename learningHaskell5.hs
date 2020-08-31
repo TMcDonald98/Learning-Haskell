@@ -1,4 +1,4 @@
-
+-- Thomas
 -- file: main.hs
 import System.Environment (getArgs)
 import Data.Char (toUpper, isUpper)
