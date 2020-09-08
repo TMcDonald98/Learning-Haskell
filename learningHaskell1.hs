@@ -1,4 +1,4 @@
--- 1) returns the middle value of three values.
+-- 1) returns the middle value of three values
 median3 :: (Num a, Ord a) => a -> a -> a -> a
 median3 x y z =
     if x == y || x == z || x > y && x < z || x < y && x > z then
