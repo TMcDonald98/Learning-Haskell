@@ -7,7 +7,7 @@ insert :: a -> List a -> List a
 insert x (Node y Nil) = Node y (Node x Nil)
 insert x (Node y tail) = Node y (insert x tail)
 
--- 2)returns a newlist with the first occurence of the value removed from the list
+-- 2)returns a new list with the first occurence of the value removed from the list
 delete :: Eq a => a -> List a -> List a
 delete _ Nil = Nil
 delete x (Node y tail)
