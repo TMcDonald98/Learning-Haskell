@@ -28,7 +28,7 @@ elementAt a (Node y tail)
         | a == 0 = y
         | otherwise = elementAt (a - 1) tail
 
--- 5)  returns the list with the value inserted into the i-th position of the list
+-- 5)  returns the list with the value inserted into the i-th position of the list.
 insertAt :: Int -> a -> List a -> List a
 insertAt 0 x Nil = Node x Nil
 insertAt _ x Nil = error "index out of range"
