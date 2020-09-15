@@ -36,7 +36,7 @@ insertAt 0 x (Node y Nil) = Node x (Node y Nil)
 insertAt 0 x (Node y tail) = Node x (Node y (insertAt (-1) x tail))
 insertAt a x (Node y tail) = Node y (insertAt (a - 1) x tail)
 
--- 6) returns thelist with the i-th element removed
+-- 6) returns thelist with the i-th element removed.
 deleteAt :: Int -> List a -> List a
 deleteAt 0 (Node y Nil) = Nil
 deleteAt _ (Node y Nil) = Node y Nil
