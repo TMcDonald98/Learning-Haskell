@@ -2,7 +2,7 @@ data List a = Node a (List a)
         | Nil 
         deriving (Show, Eq)
 
--- 1)  returns a new list with the value inserted at the end of the list
+-- 1)  returns a new list with the value inserted at the end of the list.
 insert :: a -> List a -> List a
 insert x (Node y Nil) = Node y (Node x Nil)
 insert x (Node y tail) = Node y (insert x tail)
