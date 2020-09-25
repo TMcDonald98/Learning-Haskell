@@ -14,7 +14,7 @@ delete x (Node y tail)
         | x == y = delete x tail
         | otherwise = Node y (delete x tail)
 
--- 3) returns true if the given value is in the given list.
+-- 3) returns true if the given value is in the given list
 memberOf :: Eq a => a -> List a -> Bool
 memberOf _ Nil = False
 memberOf x (Node y tail)
